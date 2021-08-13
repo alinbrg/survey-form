@@ -1,0 +1,181 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Survey Form</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="container">
+        <header>
+            <h2>SORTING CEREMONY</h2>
+            <h1>
+                Discover your Hogwarts House
+            </h1>
+            <h3>Adorn the Sorting Hat to be placed into your rightful Hogwarts house. The Sorting Hat's decision is final</h3>
+        </header>
+        <form id="survey-form">
+            <div class="form-group">
+                <label id="name-label" for="name">Name</label>
+                <input type="text" name="name" id="name" class="form-control" placeholder="Enter your name"required>
+            </div>
+            <div class="form-group">
+                <label id="email-label" for="email">Email</label>
+                <input type="email" name="email" id="email" class="form-control" placeholder="Enter your Email" required>
+            </div>
+            <div class="form-group">
+                <label id="number-label" for="number" >Age<span class="clue">(optional)</span></label
+                >
+                <input type="number" name="age" id="number" min="11" max="100" class="form-control" placeholder="Age">
+            </div>
+            <div class="form-group">
+                <p>First of all, would you describe yourself as...</p>
+                <select id="dropdown" name="role" class="form-control" required>
+                    <option disabled selected value>Select height</option>
+                    <option value="tall">Tall</option>
+                    <option value="average">Average Height</option>
+                    <option value="short">Short</option>
+                </select>
+            </div>
+            <div class="form-group">
+                <p>And your eyes...</p>
+                <select id="dropdown" name="role" class="form-control" required>
+                    <option disabled selected value>choose your eye color</option>
+                    <option value="Black">Dark brown / Black</option>
+                    <option value="Grey">Grey</option>
+                    <option value="Hazel">Hazel</option>
+                    <option value="Green">Green</option>
+                    <option value="blue-green">Blue / Green</option>
+                    <option value="Blue">Blue</option>
+                    <option value="Brown">Brown</option>
+                    <option value="blue-grey">Blue / Grey</option>
+                    <option value="Other">Other</option>
+                </select>
+            </div>
+            <div class="form-group">
+                <p>Was the day on which you were born...</p>
+                <label>
+                    <input name="birthday" value="even" type="radio" class="input-radio">
+                    An even number
+                </label>
+                <label>
+                    <input name="birthday" value="odd" type="radio" class="input-radio">
+                    An odd number
+                </label>
+            </div>
+            <div class="form-group">
+                <p>Do you most pride yourself on your...</p>
+                <span class="clue">(Check all that apply)</span>
+                <label>
+                    <input name="proud" value="determination" type="checkbox" class="input-checkbox">
+                    Determination
+                </label>
+                <label>
+                    <input name="proud" value="resilience" type="checkbox" class="input-checkbox">
+                    Resilience
+                </label>
+                <label>
+                    <input name="proud" value="originality" type="checkbox" class="input-checkbox">
+                    Proginality
+                </label>
+                <label>
+                    <input name="proud" value="kindness" type="checkbox" class="input-checkbox">
+                    Kindness
+                </label>
+                <label>
+                    <input name="proud" value="intelligence" type="checkbox" class="input-checkbox">
+                    Intelligence
+                </label>
+                <label>
+                    <input name="proud" value="imagination" type="checkbox" class="input-checkbox">
+                    Imagination
+                </label>
+                <label>
+                    <input name="proud" value="optimism" type="checkbox" class="input-checkbox">
+                    Optimism
+                </label>
+            </div>
+    
+            <div class="form-group">
+                <p>
+                    Travelling alone down a deserted road, you reach a crossroads. Do you continue...
+                </p>
+                <select id="most-like" name="mostLike" class="form-control" required>
+                    <option disabled selected value>Select an option</option>
+                    <option value="sea">Left towards the sea</option>
+                    <option value="forest">Ahead towards the forest</option>
+                    <option value="castle">Right towards the castle</option>
+                </select>
+            </div>
+    
+            <div class="form-group">
+                <p>
+                    Do you most fear...
+                </p>
+    
+                <label>
+                    <input name="prefer" value="fire" type="radio" class="input-radio"> Fire
+                </label>
+                <label>
+                    <input name="prefer" value="isolation" type="radio" class="input-radio">
+                   Isolation
+                </label>
+                <label>
+                    <input name="prefer" value="small-spaces" type="radio" class="input-radio">
+                    Small spaces
+                </label>
+                <label>
+                    <input name="prefer" value="darkness" type="radio" class="input-radio">
+                    Darkness
+                </label>
+                <label>
+                    <input name="prefer" value="Heights" type="radio" class="input-radio">
+                    Heights
+                </label>
+            </div>
+    
+            <div class="form-group">
+                <p>
+                    In a chest of magical artefacts, which would you choose...
+                </p>
+    
+                <label>
+                    <input name="artefacts" value="dagger" type="radio" class="input-radio"> Silver dagger
+                </label>
+                <label>
+                    <input name="artefacts" value="jewel" type="radio" class="input-radio"> Glittering jewel
+                </label>
+                <label>
+                    <input name="artefacts" value="key" type="radio" class="input-radio"> Golden key
+                </label>
+                <label>
+                    <input name="artefacts" value="glove" type="radio" class="input-radio"> Black glove
+                </label>
+                <label>
+                    <input name="artefacts" value="mirror" type="radio" class="input-radio">Ornate mirror
+                </label>
+                <label>
+                    <input name="artefacts" value="scroll" type="radio" class="input-radio">Bound scroll
+                </label>
+                <label>
+                    <input name="artefacts" value="bottle" type="radio" class="input-radio">Dusty bottle
+                </label>
+            </div>
+    
+            <div class="form-group">
+                <p>Any comments or suggestions?</p>
+                <textarea id="comments" class="input-textarea" name="comment" placeholder="Enter your comment here..."></textarea>
+            </div>
+    
+            <div class="form-group">
+                <button type="submit" id="submit" class="submit-button">
+                    Submit
+                </button>
+              </div>
+    
+        </form>
+    </div>
+</body>
+</html>
